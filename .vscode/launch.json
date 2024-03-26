@@ -1,0 +1,26 @@
+{
+    "configurations": [
+        {
+            "name": "Python Debugger: testv2",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "main_testv2.py",
+            "console": "integratedTerminal",
+            "python": "/home/siyu/miniconda3/envs/6103/bin/python",
+            "args": [
+                "--dataset_dir=./data",
+                "--batch_size=128",
+                "--epochs=2",
+                "--lr=0.05",
+                "--wd=5e-4",
+                "--lr_scheduler",
+                "--alpha=0.6",
+                "--mixup",
+                "--seed=0",
+                "--fig_name=testv2_lr=0.05-lr_sche-wd=5e-4-mixup.png",
+                "--test"
+            ],
+            "env": {"CUBLAS_WORKSPACE_CONFIG":":16:8"},
+        }
+    ]
+}
